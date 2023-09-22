@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@1,500&display=swap');
+body{
+    font-family: 'Noto Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.foto{
+    width: 35%;
+    box-sizing: content-box;
+}.foto__imagem{
+    width: 100%;
+}#carta-jogador {
+    width: 360px;
+    height: 500px;
+    overflow: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    background-size: 350px 300px;
+    background-repeat: no-repeat;
+    background-position-x: 5px;
+    background-position-y: 10px;
+    border-radius: 33px;
+}
+
+#carta-jogador h3 {
+    text-align: center;
+}
+
+.carta-imagem {
+    border: 1px solid black;
+    height: 100px;
+    margin: 10px;
+}
+
+.carta-imagem img {
+    width: 100%;
+    height: 100%;
+}
+
+.carta-status {
+    height: 160px;
+    margin: 2rem;
+    color: white;
+    z-index: 2;
+}
+
+.carta-status input {
+    margin: 20px 10px;
+}#carta-jogador{
+    background-image: url('../img/sDavi.png');
+    background-size: contain;
+}.carta-subtitle{
+    position: absolute;
+    font-size: 1.5rem;
+    font-weight: 600;
+    top: 2%;
+    left: 10%;
+    
+
+}.habilidades-item img{
+    width: 10vh;
+}.carta-atributos {
+    padding: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.atributos-lista {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -3.5rem;
+    left: 7.5%;
+    
+}
+
+.atributos-item {
+    color: white;
+    font-size: 1.25rem
+}
+
+.conteudo-principal {
+    flex: 1; 
+ }
+ 
+ .rodape {
+    position: relative;
+    top: 100%;
+    width: 100%;
+ }

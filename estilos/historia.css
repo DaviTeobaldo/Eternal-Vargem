@@ -1,0 +1,18 @@
+body{
+    background-color: #fdfdfd;
+}
+
+.container{
+    gap: 5rem;
+    width: 100%;
+    border: 2px solid #000;
+    border-radius: 26px;
+}.navegacao{
+    opacity: 100%;
+}.imagem__historia{
+    width: 20%;
+    height: fit-content;
+}.container__texto{
+    color: #000000;
+    font-size: 1.4rem;
+}

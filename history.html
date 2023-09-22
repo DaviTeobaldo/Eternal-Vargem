@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>História do Jogo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos/style.css">
+    
+
+    <style>
+        body{
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <audio src="musicas/musica_fase1.mp3" id="fase1"></audio>
+    <audio src="musicas/musica_jardimeuropa.mp3" id="jardimeuropa"></audio>
+    <nav class="navegacao navbar navbar-expand-lg">
+        <div class="container-fluid justify-content-center">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item mr-3">
+                        <a class="nav-link navegacao-item" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item mr-3">
+                        <a class="nav-link navegacao-item" href="history.html">História</a>
+                    </li>
+                    <li class="nav-item mr-3">
+                        <a class="nav-link navegacao-item" href="personagem.html">Personagens</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle navegacao-item" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Quem somos nós?
+                        </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="we.html">Davizeira</a></li>
+                        <li><a class="dropdown-item" href="we.html">Mister. Hidetoshi</a></li>
+                        <li><a class="dropdown-item" href="we2.html">Gustavo Originals</a></li>
+                        <li><a class="dropdown-item" href="we4.html">Gustavo Santista</a></li>
+                        <li><a class="dropdown-item" href="we5.html">Paulo</a></li>
+                    </ul>
+                    </li>
+                </ul>
+            </div>
+            
+    </nav>
+    <div class="container mt-4">
+        <!-- Fases - Cards com Botões -->
+        <div class="row">
+            <!-- Fase 1 - A Origem do Caos -->
+            <div class="col-md-6 mb-4" onclick="fase()">
+                <div class="card">
+                    <img src="img/cenarios.png" class="card-img-top img-fluid" alt="Imagem da Fase 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Fase 1 - A Origem do Caos</h5>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#fase1Modal">
+                            Detalhes
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fase 2 - Cemitério -->
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <img src="img/Cemitério-EV.png" class="card-img-top img-fluid" alt="Imagem da Fase 2" style="height: 306px">
+                    <div class="card-body">
+                        <h5 class="card-title">Fase 2 - Cemitério</h5>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#fase2Modal">
+                            Detalhes
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <img src="img/cenarios03.jpg" class="card-img-top img-fluid" alt="Imagem da Fase 3" style="height: 306px">
+                    <div class="card-body">
+                        <h5 class="card-title">Fase 3 - Jardim São Marcos</h5>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#fase3Modal">
+                            Detalhes
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fase 4 - Centro da Vargem Grande -->
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <img src="img/cenarios04.gif" class="card-img-top img-fluid" alt="Imagem da Fase 4" style="height: 306px">
+                    <div class="card-body">
+                        <h5 class="card-title">Fase 4 - Centro da Vargem Grande</h5>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#fase4Modal">
+                            Detalhes
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fase 5 - Rodovia -->
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <img src="img/Centro-EV.png" class="card-img-top img-fluid" alt="Imagem da Fase 5" style="height: 306px">
+                    <div class="card-body">
+                        <h5 class="card-title">Fase 5 - Rodovia</h5>
+                        
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#fase5Modal">
+                            Detalhes
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fase 6 - Jardim Europa: O Berço do Caos -->
+            <div class="col-md-6 mb-4" onclick="jardimeuropa()">
+                <div class="card">
+                    <img src="img/Usina-EV.png" class="card-img-top img-fluid" alt="Imagem da Fase 6" style="height: 306px">
+                    <div class="card-body">
+                        <h5 class="card-title">Fase 6 - Jardim Europa: O Berço do Caos</h5>
+                        
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#fase6Modal">
+                            Detalhes
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Adicione mais cards para outras fases aqui -->
+
+        </div>
+    </div>
+    <div class="container mt-4">
+        <!-- Fases - Modais -->
+        <div class="modal fade text-black" id="fase1Modal" tabindex="-1" role="dialog" aria-labelledby="fase1ModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="fase1ModalLabel">Fase 1 - A Origem do Caos</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Há muito tempo atrás, assim falou um profeta: “O ápice da evolução seria declínio semelhante ao delírio,
+                            e, neste local, o caos nascerá. Quando o eclipse preencher o céu avermelhado, o clima tornará-se frio
+                            e o vazio tomará conta da mente das pessoas...
+                            
+                        </p>
+                        <p>Num cenário sombrio, um viajante adentra uma densa floresta, buscando refúgio em meio ao caos que tomou conta da cidade de Bonanza. A escuridão da floresta é habitada por perigosos monstros que espreitam entre as árvores, ameaçando aqueles que se aproximam. Após uma batalha contra um temível Brócolis bombado, o viajante encontra uma pequena Ervilha em Vagem, exilada e amargurada por sua própria espécie. Movido pela compaixão, o viajante decide aceitar a Ervilha como companheira de jornada, formando um laço inesperado em meio ao tormento que os aguarda enquanto buscam chegar ao cemitério, enfrentando inimigos como Maçã, Cogumelo, Brócolis pequeno, Banana e Limão, com o grande desafio final contra o Brócolis, Aquele que toma bomba.
+                        </p>
+                            <p>
+                            Esta narrativa transporta o leitor para um mundo misterioso e perigoso, onde personagens improváveis encontram união em meio ao sofrimento. A jornada promete desafios e incertezas, com um destino incerto à vista, mantendo o suspense e a curiosidade sobre o que acontecerá a seguir.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Fase 2 - Cemitério -->
+        <div class="modal fade text-black" id="fase2Modal" tabindex="-1" role="dialog" aria-labelledby="fase2ModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="fase2ModalLabel">Fase 2 - Cemitério</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            No cemitério, um cenário caótico e desrespeitoso para com os falecidos aguarda o viajante. A escuridão da noite, o silêncio hostil dos inimigos e a chuva densa criam um ambiente sombrio e amedrontador. Guiado apenas pela luz de sua lanterna e das estrelas, o viajante encontra ajuda inesperada na Ervilha, que se revela útil ao criar raízes e atirar pequenas ervilhas contra os inimigos. A jornada inclui enfrentar oponentes como Tomate pequeno, Cebola, Pimenta, Cogumelo, Alface e repolho, culminando em um confronto épico contra a temível Abóbora, conhecida como O Terror dos que pereceram.
+                        </p><p>Este trecho descreve um ambiente macabro e desafiador enquanto o protagonista avança com determinação, enfrentando inimigos alimentícios e contando com a surpreendente habilidade da Ervilha. O Boss final, a Abóbora, representa um desafio iminente, e o cenário sombrio e hostil intensifica a atmosfera de suspense e tensão que envolve a narrativa.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Fase 3 - Jardim São Marcos -->
+        <div class="modal fade text-black" id="fase3Modal" tabindex="-1" role="dialog" aria-labelledby="fase3ModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="fase3ModalLabel">Fase 3 - Jardim São Marcos</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            O protagonista enfrenta um dos lugares mais perigosos da história, onde criaturas ameaçadoras estão por toda parte, dificultando a sobrevivência humana. Ao entrar em uma casa iluminada, ele conhece Originals, o Filósofo, que revela uma passagem secreta para um grupo de Morangos exilados. Inicialmente temeroso, o protagonista se surpreende com a pacífica convivência dos Morangos na casa. O líder dos Morangos compartilha a história de seu exílio, revelando que o Lorde dos alimentos buscava a imortalidade através de sacrifícios de suas vidas, e os Morangos eram suas vítimas escolhidas. Recusando-se a continuar sendo sacrificados, eles encontraram refúgio com Originals.
+                        </p><p>
+Em meio a essa descoberta, as forças militares de Vargem Grande Paulista e Kútchia City unem-se para lutar contra os assassinos de alimentos, com o último invadindo o território do primeiro em uma guerra implacável. Os principais inimigos incluem Batata, Cenourinha, Milho, Melão, Chuchu e Laranja, enquanto o confronto final se aproxima com o temível Tomate, A Fruta Carmesim, e Uva, A Majestosa, como os chefes finais desta narrativa de fantasia intrigante. A história se desdobra com intrigas, alianças e segredos que moldam o destino do mundo fictício em que se passa.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Fase 4 - Centro da Vargem Grande -->
+        <div class="modal fade text-black" id="fase4Modal" tabindex="-1" role="dialog" aria-labelledby="fase4ModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="fase4ModalLabel">Fase 4 - Centro da Vargem Grande</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            O cozinheiro adentra uma cidade devastada pelo horror e pela desolação, onde a felicidade se transformou em ilusão. Cadáveres estão espalhados pelas ruas, e um odor terrível impregna o ar. Ao enfrentar uma ampla variedade de inimigos, incluindo Laranja, o Curandeiro, Amora, a Cabulosa, e Lichia, a Impetuosa, ele encontra Felipão, Aquele que Ama Arroz, que lhe oferece um pote de arroz com poderes misteriosos para ajudá-lo em sua jornada em direção à usina.
+                        </p><p>
+                            Enquanto a guerra entre humanos e alimentos se desenrola, os humanos estão em declínio, pois suas armas não afetam os alimentos que levam vantagem no confronto. Os principais inimigos que o cozinheiro enfrenta incluem Milho, Jaca, Brócolis pequeno, Batata, Limão, Banana, Melão e Tomate pequeno, culminando em uma batalha contra Laranja, O Curandeiro, Amora, A Cabulosa e Lichia, A Impetuosa. A narrativa continua a explorar o mundo fantástico e as tensões crescentes entre humanos e alimentos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Fase 5 - Rodovia -->
+        <div class="modal fade text-black" id="fase5Modal" tabindex="-1" role="dialog" aria-labelledby="fase5ModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="fase5ModalLabel">Fase 5 - Rodovia</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            A narrativa descreve um cenário caótico e em chamas onde famílias buscam abrigo em seus carros enquanto os alimentos dominam a cena. O protagonista, o cozinheiro, enfrenta os formidáveis Irmãos do Caos, Pimentão Amarelo, O Príncipe Pálido e Pimentão Vermelho, O Herdeiro, resultando em ferimentos graves e um desmaio. Ele acorda em um hospital em Kútchia City, onde Santista, O Torcedor Fiel, cuida de seus ferimentos e lhe concede um item de cura poderoso.
+                        </p><p>
+                            
+                            Após sua recuperação, o cozinheiro recebe informações de Davizera, O Vascaíno, sobre o que aconteceu durante seu desmaio e é levado de volta a Vargem Grande Paulista. Davizera também o concede uma substância que adiciona poderes arcanos, especificamente raios, à sua arma. Com esses novos poderes, o cozinheiro retorna à batalha e derrota os temíveis Irmãos do Caos, enfrentando outros inimigos como Pimenta, Jaca, Limão, Cebola, Melão e Cenourinha. A narrativa continua a explorar a jornada do cozinheiro em um mundo cheio de desafios e alianças improváveis.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Fase 6 - Jardim Europa: O Berço do Caos -->
+        <div class="modal fade text-black" id="fase6Modal" tabindex="-1" role="dialog" aria-labelledby="fase6ModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="fase6ModalLabel">Fase 6 - Jardim Europa: O Berço do Caos</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            O cozinheiro, em meio a um cenário de desolação e caos, visualiza a entrada da usina como o ponto final dessa jornada. As árvores mortas e a atmosfera sombria amplificam a sensação de tristeza e desespero no local. Ao se aproximar da entrada, ele observa uma barreira de jacas guardadas por militares que tentam, em vão, rompê-la com tanques de guerra. O cozinheiro rouba uma máscara de proteção contra a radiação e parte em busca de uma alternativa para entrar na usina.
+                        </p><p>
+No interior da floresta, ele encontra Paulo, O Precoce, e uma amigável Melancia, ambos exilados por desejarem a paz. Comovidos pela história do cozinheiro e seu objetivo de encerrar a guerra, eles decidem ajudá-lo a passar pelas jacas. O cozinheiro e a Melancia abrem caminho para a entrada da usina, onde um eclipse vermelho súbito surge no céu, indicando o início do confronto final. Na usina, ele enfrenta a poderosa Pimenta, que era a fonte da imortalidade dos alimentos e, ao derrotá-la, todas as comidas perecem, exceto a Ervilha, que revela ser a verdadeira Lorde do Caos e profetiza um dilema para o cozinheiro: submeter-se a ela ou enfrentá-la em uma batalha pela restauração da humanidade.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center text-light">
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2023 Cotia's Products:
+          <a class="text-light" href="https://meusite.com/">meusite.com</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="tocarmusica.js"></script>
+</body>
+</html>
